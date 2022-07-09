@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import '../pages/home/home.dart';
+import '../pages/found/found.dart';
+import '../pages/lost/lost.dart';
+import '../pages/profile/profile.dart';
 
 class Wrapper extends StatefulWidget {
   const Wrapper({Key? key}) : super(key: key);
@@ -11,23 +15,11 @@ class _WrapperState extends State<Wrapper> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _pages = <Widget>[
-    Text(
-      'Home Page',
-      style: optionStyle,
-    ),
-    Text(
-      'Lost Page',
-      style: optionStyle,
-    ),
-    Text(
-      'Found Page',
-      style: optionStyle,
-    ),
-    Text(
-      'Profile Page',
-      style: optionStyle,
-    ),
+  static final List<Widget> _pages = [
+    HomePage(),
+    FoundPage(),
+    LostPage(),
+    ProfilePage(),
   ];
   void _onItemTapped(int index) {
     setState(() {
