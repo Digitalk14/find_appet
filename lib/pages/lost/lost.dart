@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class LostPage extends StatelessWidget {
-  const LostPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Lost Page',),
+    return Center(
+      child: Container(
+        child: Text('Lost Page',),
+      ),
     );
   }
 }

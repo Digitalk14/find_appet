@@ -16,7 +16,7 @@ class _WrapperState extends State<Wrapper> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static final List<Widget> _pages = [
-    HomePage(),
+    // HomePage(),
     FoundPage(),
     LostPage(),
     ProfilePage(),
@@ -30,9 +30,6 @@ class _WrapperState extends State<Wrapper> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Find Appet'),
-      ),
       body: Center(
         child: _pages.elementAt(_selectedIndex),
       ),
