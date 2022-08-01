@@ -24,7 +24,7 @@ class _HomePageNavigatorState extends State<HomePageNavigator> {
           builder: (BuildContext context) {
             switch (settings.name) {
               case '/login':
-                return ProfileLogin();
+                return const ProfileLogin();
               default:
                 return HomePage();
             }

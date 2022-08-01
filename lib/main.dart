@@ -1,6 +1,7 @@
 import 'package:find_appet/navigator/profilePageNavigator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'navigator/lostPageNavigator.dart';
 import 'pages/home/home.dart';
 import 'navigator/homeNavigator.dart';
 import 'pages/found/found.dart';
@@ -94,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               HomePageNavigator(),
               FoundPage(),
-              LostPage(),
+              LostPageNavigator(),
               ProfilePageNavigator(),
             ],
           ),
