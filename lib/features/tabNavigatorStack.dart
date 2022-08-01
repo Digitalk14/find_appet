@@ -22,14 +22,13 @@ class TabNavigator extends StatelessWidget {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => routeBuilders[TabNavigatorRoutes.lost]!(context)));
+            builder: (context) =>
+                routeBuilders[TabNavigatorRoutes.lost]!(context)));
   }
 
   Map<String, WidgetBuilder> _routeBuilders(BuildContext context) {
     return {
-      TabNavigatorRoutes.root: (context) => HomePage(
-            onPush: (route) => _push(context, route),
-          ),
+      TabNavigatorRoutes.root: (context) => HomePage(),
       TabNavigatorRoutes.lost: (context) => LostPage(),
       TabNavigatorRoutes.found: (context) => FoundPage(),
       TabNavigatorRoutes.profile: (context) => ProfilePage(),

@@ -4,9 +4,13 @@ class LostPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        child: Text('Lost Page',),
+    return Scaffold(
+      appBar: AppBar(title: const Text('Lost page')),
+      body: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Center(
+          child: Column(children: [Text('Hello')]),
+        ),
       ),
     );
   }

@@ -4,9 +4,13 @@ class FoundPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        child: Text('Found Page',),
+   return Scaffold(
+      appBar: AppBar(title: const Text('Found page')),
+      body: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Center(
+          child: Column(children: [Text('Hello')]),
+        ),
       ),
     );
   }

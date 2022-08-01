@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import '../../utilites/text.dart' as text;
 import '../../features/tab_itemStack.dart';
+import '../profile/login/login.dart';
+
+
 
 class HomePage extends StatelessWidget {
-  HomePage({required this.onPush});
-  final ValueChanged<TabItem> onPush;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,8 +30,9 @@ class HomePage extends StatelessWidget {
                       MaterialStateProperty.all<Color>(Colors.grey),
                 ),
                 onPressed: () {
-                  onPush.call(TabItem.lost);
-                  // Navigator.pushNamed(context, '/profile/login');
+                  // onPush.call(TabItem.profile);
+                  // Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfileLogin()),);
+                  Navigator.pushNamed(context, '/login');
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -63,7 +65,7 @@ class HomePage extends StatelessWidget {
                   backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
                 ),
                 onPressed: () {
-                  onPush.call(TabItem.found);
+                 
                   // Navigator.pushNamed(context, '/profile');
                 },
                 child: Padding(

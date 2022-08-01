@@ -10,7 +10,14 @@ class ProfilePage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(8.0),
         child: Center(
-          child: Column(children: [Text('Hello')]),
+          child: Column(children: [
+            Text('Hello'),
+            TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/login');
+                },
+                child: Text('Go to Login'))
+          ]),
         ),
       ),
     );
