@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Alpha",
+        "breed": "French Buldog",
+        "color": "black white",
+        "size": "little",
+        "date": "03.08.2022",
+        "imgSrc": "https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/french-bulldog-card-large.jpg?bust=1535568669&width=1200",
+        "location": ""
+    },
+    {
+        "id": 2,
+        "name": "Bravo",
+        "breed": "Beagle",
+        "color": "white brown",
+        "size": "medium",
+        "date": "02.08.2022",
+        "imgSrc": "https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/beagle-card-large.jpg?bust=1535569265&width=1200",
+        "location": ""
+    },
+    {
+        "id": 3,
+        "name": "Charlie",
+        "breed": "Corgi",
+        "color": "white brown black",
+        "size": "little",
+        "date": "29.07.2022",
+        "imgSrc": "https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/pembroke-welsh-corgi-card-large.jpg?bust=1535568087&width=1200",
+        "location": ""
+    },
+    {
+        "id": 4,
+        "name": "Echo",
+        "breed": "Retriever",
+        "color": "Gold",
+        "size": "Big",
+        "date": "22.07.2022",
+        "imgSrc": "https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/golden-retriever-card-large.jpg?bust=1535568543&width=1200",
+        "location": ""
+    }
+]
