@@ -23,7 +23,7 @@ class _LostPageNavigatorState extends State<LostPageNavigator> {
             case '/lost-card':
               return LostCardPage();
             default: 
-              return LostCardPage();
+              return LostPage();
           }
         },);
       },
