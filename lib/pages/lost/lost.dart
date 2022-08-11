@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 import '../../widgets/pet-card/pet-card.dart';
 
-class LostPage extends StatelessWidget {
+class LostPage extends StatefulWidget {
+  const LostPage({Key? key}) : super(key: key);
+
   @override
+  State<LostPage> createState() => _LostPageState();
+}
+
+class _LostPageState extends State<LostPage> {
+  @override
+  void initState(){
+    super.initState();
+    loadData();
+  }
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Lost page')),
@@ -33,4 +45,21 @@ class LostPage extends StatelessWidget {
       ),
     );
   }
+}
+
+Future<http.Response> getData() async {
+  const url = 'http://localhost:3001/lost/dogs';
+  return await http.get(Uri.parse(url));
+}
+
+void loadData() {
+  getData().then((res) {
+    if (res.statusCode == 200) {
+      print(res.body);
+    } else {
+      print(res.statusCode);
+    }
+  }).catchError((err){
+    debugPrint(err.toString());
+  });
 }
